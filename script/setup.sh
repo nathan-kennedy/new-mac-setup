@@ -6,20 +6,48 @@
 echo "Starting Development Environment Setup..."
 failure_log=""
 
-# Install Homebrew; Set .zprofile config; Initialize immediately
+# Check if Command Line Tools for Xcode is installed
+# **Xcode Command Line Tools**: Essential tools for macOS development, including compilers and command-line utilities. 
+if ! xcode-select -p &>/dev/null; then
+  echo "Xcode Command Line Tools not found. Installing..."
+  # Prompt user to install the Command Line Tools
+  xcode-select --install
+  # Wait until the Command Line Tools are installed
+  until xcode-select -p &>/dev/null; do
+    echo "Waiting for Command Line Tools to install..."
+    sleep 5
+  done
+  echo "Xcode Command Line Tools installed."
+else
+  echo "Xcode Command Line Tools already installed."
+fi
+
+# Install Homebrew after architecture check; Set .zprofile config; Initialize immediately
 # **Homebrew**: Known as Homebrew, it's a package manager for MacOS to install software from the terminal.
 echo "You might be prompted for your password to install Homebrew and its dependencies."
+
+# Determine the architecture of the machine
+ARCH=$(uname -m)
+if [[ "$ARCH" == "arm64" ]]; then
+    HOMEBREW_PREFIX="/opt/homebrew"
+else
+    HOMEBREW_PREFIX="/usr/local"
+fi
+
 if ! command -v brew &> /dev/null; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" || failure_log+="Homebrew installation failed\n"
 else
     echo "Homebrew already installed, skipping installation."
 fi
-if ! grep -q 'eval "$(/opt/homebrew/bin/brew shellenv)"' ~/.zprofile; then
-    (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile
+
+# Initialize Homebrew
+if ! grep -q 'eval "$('$HOMEBREW_PREFIX'/bin/brew shellenv)"' ~/.zprofile; then
+    (echo; echo 'eval "$('$HOMEBREW_PREFIX'/bin/brew shellenv)"') >> ~/.zprofile
 fi
-eval "$(/opt/homebrew/bin/brew shellenv)" || failure_log+="Homebrew initialization failed\n"
+eval "$($HOMEBREW_PREFIX/bin/brew shellenv)" || failure_log+="Homebrew initialization failed\n"
 echo "Homebrew installed and configured."
 
+#Now that the correct PATH is set we use 'brew' normally, and drop '$HOMEBREW_PREFIX'.
 # Update and Upgrade Homebrew
 brew update || failure_log+="Homebrew update failed\n"
 brew upgrade || failure_log+="Homebrew upgrade failed\n"
@@ -58,9 +86,8 @@ if [ -f ~/.zshrc ]; then
 fi
 
 # Overwrite the existing .zshrc file with the new configuration
-curl -o ~/.zshrc https://gist.githubusercontent.com/yourusername/yourgistid/raw/yourfilename.zshrc || failure_log+=".zshrc configuration download failed\n"
+curl -o ~/.zshrc https://raw.githubusercontent.com/nathan-kennedy/dot-files/master/.zshrc || failure_log+=".zshrc configuration download failed\n"
 echo ".zshrc configuration applied."
-
 
 # Install Raycast
 # **Raycast**: This is a productivity tool that lets you control and automate tasks directly from your macOS toolbar with amazing keyboard shortcut support.
@@ -127,7 +154,6 @@ done
 # **Tree**: A recursive directory listing command that produces a depth-indented listing of files.
 # **Wifi-password**: A script to quickly find the password of the WiFi you're connected to.
 # **Z**: A command line tool that allows you to navigate your filesystem super fast using 'frecency' (combination of frequency and recency).
-# **Zsh**: Zsh (Z shell) is a Unix shell (a superset of bash) with many features.
 brew install archey4 asciinema bat colordiff diff-so-fancy duf exa fd fzf git glances htop imagemagick inxi neovim pandoc rar speedtest-cli tealdeer tree wifi-password z || failure_log+="Installation of one or more command-line tools failed\n"
 
 # *Install Node and Python via Homebrew:*
