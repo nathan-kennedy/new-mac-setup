@@ -1,6 +1,8 @@
+*HASN'T BEEN TESTED YET - FEEL FREE TO TEST YOURSELF - WILL BE RUNNING THIS SCRIPT IN THE NEXT COUPLE DAYS ON AN OLDER MAC AND AGAIN IN A VIRTUAL MACHINE ON AN M1 - I'LL UPDATE THIS README WHEN FINISHED*
+
 # Mac Development Environment Setup Script
 
-Welcome to the Mac Development Environment Setup Script repository! This script is designed to automate the setup of a new Mac for development purposes. It's geared towards both experienced and novice developers looking to have a seamless setup experience.
+Welcome to the Mac Development Environment Setup Script repository! This script is designed to automate the setup of a new Mac for development purposes. It's geared towards both experienced and novice developers looking to have a seamless setup experience. It installs all of my personal picks for the best packages, tools, and software when working on a Mac.
 
 ## Features
 
