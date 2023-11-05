@@ -1,0 +1,19 @@
+# System files
+.DS_Store
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# IDE files (depends on your IDE)
+.idea/
+.vscode/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Others
+*.gz

@@ -1,0 +1,190 @@
+#!/usr/bin/env bash
+
+# Preparing a new Mac for development
+# Script Created by Nathan Kennedy nathankennedy1@gmail.com
+
+echo "Starting Development Environment Setup..."
+failure_log=""
+
+# Install Homebrew; Set .zprofile config; Initialize immediately
+# **Homebrew**: Known as Homebrew, it's a package manager for MacOS to install software from the terminal.
+echo "You might be prompted for your password to install Homebrew and its dependencies."
+if ! command -v brew &> /dev/null; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" || failure_log+="Homebrew installation failed\n"
+else
+    echo "Homebrew already installed, skipping installation."
+fi
+if ! grep -q 'eval "$(/opt/homebrew/bin/brew shellenv)"' ~/.zprofile; then
+    (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile
+fi
+eval "$(/opt/homebrew/bin/brew shellenv)" || failure_log+="Homebrew initialization failed\n"
+echo "Homebrew installed and configured."
+
+# Update and Upgrade Homebrew
+brew update || failure_log+="Homebrew update failed\n"
+brew upgrade || failure_log+="Homebrew upgrade failed\n"
+
+# Function to check if a cask is installed
+is_cask_installed() {
+    brew list --cask | grep -q "$1"
+}
+
+# Function to check if a formula is installed
+is_formula_installed() {
+    brew list | grep -q "$1"
+}
+
+# Install iTerm2
+# **iTerm2**: A replacement for Terminal and the successor to iTerm. It works on Macs and includes features like split panes, full-screen mode, and tabs.
+if ! is_cask_installed iterm2; then
+    brew install --cask iterm2 || failure_log+="iTerm2 installation failed\n"
+fi
+
+# Install ZSH and set as default shell
+# **Zsh**: Zsh (Z shell) is a Unix shell with many features. Zsh is a superset of bash.
+if ! is_formula_installed zsh; then
+    brew install zsh || failure_log+="ZSH installation failed\n"
+fi
+echo "You might be prompted for your password to change the default shell."
+if [ "$SHELL" != "/opt/homebrew/bin/zsh" ]; then
+    chsh -s /opt/homebrew/bin/zsh || failure_log+="Changing default shell to ZSH failed\n"
+fi
+
+# Backup and download new .zshrc configuration
+if [ -f ~/.zshrc ]; then
+    # Create a backup with a timestamp
+    cp ~/.zshrc ~/.zshrc.bak_$(date +%Y%m%d_%H%M%S)
+    echo "Existing .zshrc file backed up."
+fi
+
+# Overwrite the existing .zshrc file with the new configuration
+curl -o ~/.zshrc https://gist.githubusercontent.com/yourusername/yourgistid/raw/yourfilename.zshrc || failure_log+=".zshrc configuration download failed\n"
+echo ".zshrc configuration applied."
+
+
+# Install Raycast
+# **Raycast**: This is a productivity tool that lets you control and automate tasks directly from your macOS toolbar with amazing keyboard shortcut support.
+if ! is_cask_installed raycast; then
+    brew install --cask raycast || failure_log+="Raycast installation failed\n"
+fi
+
+# Install Visual Studio Code (Vim and Emacs users avert your eyes - or delete me)
+# **Visual Studio Code**: An open-source code editor developed by Microsoft.
+if ! is_cask_installed visual-studio-code; then
+    brew install --cask visual-studio-code || failure_log+="Visual Studio Code installation failed\n"
+fi
+
+# Install mas (Mac App Store CLI)
+# **Mas**: A command-line interface for the Mac App Store.
+if ! is_formula_installed mas; then
+    brew install mas || failure_log+="MAS installation failed\n"
+fi
+
+# Ensure the user is logged into the App Store
+echo "Please ensure you are logged into the App Store. Press Enter when ready."
+read -p ""
+
+# *Install software from the App Store with auro id search in case you want to add applications to the 'apps' list/array*
+
+# **Hidden Bar**: A Mac utility that helps to hide menu bar items to declutter the screen.
+# **DropOver**: A MacOS app to create a temporary shelf for drag and drop files.
+# Define the app names
+apps=("Hidden Bar" "DropOver")
+
+# Loop through the app names and install each one
+for app in "${apps[@]}"; do
+    # Search for the app and extract the ID using awk
+    app_id=$(mas search "$app" | awk -F" " '/^ / {print $1; exit}')
+    if [[ ! -z "$app_id" ]]; then
+        # Install the app using the extracted ID
+        mas install "$app_id" || failure_log+="$app installation failed\n"
+    else
+        failure_log+="$app ID lookup failed\n"
+    fi
+done
+
+# *Install command-line tools and applications via Homebrew:*
+
+# **Archey4**: A script to display system information in terminal. It even incudes retro Apple logo ascii art.
+# **Asciinema**: An open-source solution for recording terminal sessions and sharing them.
+# **Bat**: Adds syntax highlighting for a large number of languages, git integration, etc to 'cat' command.
+# **Colordiff**: A wrapper for 'diff' that produces the same output but with coloured syntax and vertical alignment.
+# **Diff-so-fancy**: A series of scripts to make Git's diff output look fancier and esier to understand.
+# **Duf**: Disk Usage/Free Utility with a best-in-slot visual presentation.
+# **Exa**: A replacement for the 'ls' command with improved features like colors and file permissions.
+# **Fd**: A fast and user-friendly alternative to the classic 'find' command within the terminal.
+# **Fzf**: A flexible and fast command-line fuzzy finder to enhance shell command efficiency.
+# **Git**: An open-source version control system used to handle all kinds of projects, large and small.
+# **Glances**: A command line 'top-like' system monitoring tool.
+# **Htop**: An interactive system monitor designed as an alternative to the Unix program 'top'.
+# **ImageMagick**: A software suite to create, edit and compose bitmap images in a variety of formats.
+# **Inxi**: A full-featured system information script written in bash.
+# **Neovim**: An extension of Vim that includes new features, simplified code, and a plugin architecture.
+# **Pandoc**: A universal document converter, able to convert files from one markup format into another.
+# **Rar**: A command line utility to create RAR archives.
+# **Speedtest-cli**: Command line interface for testing internet bandwidth using speedtest.net.
+# **Tealdeer**: A very fast implementation of 'tldr' client providing simplified, community-driven man pages.
+# **Tree**: A recursive directory listing command that produces a depth-indented listing of files.
+# **Wifi-password**: A script to quickly find the password of the WiFi you're connected to.
+# **Z**: A command line tool that allows you to navigate your filesystem super fast using 'frecency' (combination of frequency and recency).
+# **Zsh**: Zsh (Z shell) is a Unix shell (a superset of bash) with many features.
+brew install archey4 asciinema bat colordiff diff-so-fancy duf exa fd fzf git glances htop imagemagick inxi neovim pandoc rar speedtest-cli tealdeer tree wifi-password z || failure_log+="Installation of one or more command-line tools failed\n"
+
+# *Install Node and Python via Homebrew:*
+
+# **Node**: Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. 
+# **Python**: Python is a programming language that lets you work quickly and integrate systems effectively.
+brew install node python || failure_log+="Node or Python installation failed\n"
+
+# *Install gui applications via Homebrew Cask:*
+
+# Install 1Password (paid - yearly subscription - $36 as of 2023 - worth the money, especially if you want to store sensitive data other than just passwords.)
+# **1Password**: A password manager that provides a place for users to store various passwords, software licenses, and other sensitive information in a virtual vault locked with a PBKDF2-guarded master password. This is the best-in-slot password manager imo.
+brew install --cask 1password || failure_log+="1Password installation failed\n"
+
+# Install AlDente (paid features, but free version is great)
+# **AlDente**: AlDente is a menu bar tool for MacOS that allows you to control your MacBook's battery charging threshold and helps extend battery life.
+brew install --cask aldente || failure_log+="AlDente installation failed\n"
+
+# Install Alt-Tab
+# **Alt-Tab**: Alt-Tab is a small application that allows you to change the style of visuals displayed for alt-tabbing (bound to option+tab).
+brew install --cask alt-tab || failure_log+="Alt-Tab installation failed\n"
+
+# Install Brave Browser (Is Arc considered the cool kid on the block now?)
+brew install --cask brave-browser || failure_log+="Brave Browser installation failed\n"
+
+# Install Cheatsheet
+# **Cheatsheet**: Cheatsheet is an application that provides quick reference for keyboard shortcuts. If you hold the ⌘-Key a bit longer, it will display a panel showing available shortcuts for the current application.
+brew install --cask cheatsheet || failure_log+="Cheatsheet installation failed\n"
+
+# Install Clean My Mac X (paid - yearly subscription - $39.95 as of 2023)
+# **CleanMyMac X**: An all-in-one package for your Mac, it cleans junk and makes your computer run faster.
+brew install --cask cleanmymac || failure_log+="Clean My Mac X installation failed\n"
+
+# Install Logseq (paid syncing feature - not needed when using cloud service or git repo for storing your 'graph' e.g. your markdown files and directories)
+# **Logseq**: A local-first, non-linear, outliner notebook for organizing and sharing your personal knowledge base. I have a strong personal preference for LogSeq over Obsidian. Recommended plugins: Tags, Heading level shortcuts, Markdown table editor, Bullet Threading, Git, Journal calendar, and GPT-3 OpenAI if you already pay for an API key.
+brew install --cask logseq || failure_log+="Logseq installation failed\n"
+
+# Install UTM 
+# **Utm**: A full-featured virtual machine host for iOS if you need to run Linux or Windows on your machine.
+brew install --cask utm || failure_log+="UTM installation failed\n"
+
+# Homebrew Cleanup
+brew cleanup || failure_log+="Homebrew cleanup failed\n"
+
+echo "Development Environment Setup Complete!"
+
+if [[ -n $failure_log ]]; then
+    echo -e "There were some errors during the setup:\n$failure_log"
+    echo "You may need to install these applications manually."
+fi
+
+# *Additional Notes:*
+
+# You may be prompted to input your password more than once.
+
+# Error handling will log errors and list errors at the end of the script but the script will continue to run even if an error occurs.
+
+# Feel free to remove or add packages and software to suit your needs. Keep in mind the top-to-bottom order of commands. If you want a cask package, Homebrew needs to be installed first. Also anything being installed from the App store needs to excecute after 'mas' installation on line 44.
+
+# Make sure you've logged into the App Store before running this script since 'mas' requires you to be logged in. If you're adding software to the script from the App store be sure to use the apropriate id number (App names do not work with mas).
