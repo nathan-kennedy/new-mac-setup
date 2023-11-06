@@ -1,4 +1,4 @@
-*HASN'T BEEN TESTED YET - FEEL FREE TO TEST YOURSELF - WILL BE RUNNING THIS SCRIPT IN THE NEXT COUPLE DAYS ON AN OLDER MAC AND AGAIN IN A VIRTUAL MACHINE ON AN M1 - I'LL UPDATE THIS README WHEN FINISHED*
+_HASN'T BEEN TESTED YET - FEEL FREE TO TEST YOURSELF - WILL BE RUNNING THIS SCRIPT IN THE NEXT COUPLE DAYS ON AN OLDER MAC AND AGAIN IN A VIRTUAL MACHINE ON AN M1 - I'LL UPDATE THIS README WHEN FINISHED_
 
 # Mac Development Environment Setup Script
 
@@ -65,19 +65,18 @@ This document provides an overview of the software and tools that the setup scri
 
 - **Xcode Command Line Tools**: Essential tools for macOS development, including compilers and command-line utilities.
 - **Homebrew**: The "missing package manager" for macOS, used to install and manage software.
-- **Zsh**: Z shell, a Unix shell that can be used as an interactive login shell and as a command interpreter for shell scripting.
 - **Cask**: Extension for Homebrew for installing macOS native applications.
-- **Raycast**: A productivity tool allowing you to control your tools with a few keystrokes.
 - **mas**: Mac App Store command-line interface that simplifies the installation of App Store applications.
 
 ## Terminals and Shells
 
 - **iTerm2**: A replacement for Terminal and the successor to iTerm that brings powerful features for command-line users.
-- **neovim**: A hyperextensible Vim-based text editor.
+- **Zsh**: Z shell, a Unix shell that can be used as an interactive login shell and as a command interpreter for shell scripting.
 
 ## Text Editors and IDEs
 
 - **Visual Studio Code**: A lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.
+- **neovim**: A hyperextensible Vim-based text editor.
 
 ## Command-Line Utilities
 
@@ -108,11 +107,12 @@ This document provides an overview of the software and tools that the setup scri
 
 ## Productivity Tools
 
-- **Hidden Bar**: An ultra-light MacOS utility that helps hide menu bar icons.
-- **DropOver**: A utility that makes dragging and dropping files or content easier.
-- **aldente**: A charging limiter for MacBooks to help extend the battery's lifespan.
 - **alt-tab**: A window switcher for macOS that allows switching between windows in a more convenient way.
+- **cheatsheet**: An app that shows keyboard shortcuts in an overlay window.
+- **DropOver**: A utility that makes dragging and dropping files or content easier.
+- **Hidden Bar**: An ultra-light MacOS utility that helps hide menu bar icons.
 - **logseq**: A privacy-first, open-source knowledge base that works on top of local plain-text Markdown and Org-mode files.
+- **Raycast**: A productivity tool allowing you to control your tools with a few keystrokes.
 
 ## Browsers
 
@@ -120,6 +120,6 @@ This document provides an overview of the software and tools that the setup scri
 
 ## Utility Apps
 
-- **cheatsheet**: An app that shows keyboard shortcuts in an overlay window.
+- **aldente**: A charging limiter for MacBooks to help extend the battery's lifespan.
 - **clean my Mac x**: A cleaning and optimization tool for Mac.
 - **utm**: A virtual machines manager for Mac, designed to create virtual machines that can run on Apple Silicon.
