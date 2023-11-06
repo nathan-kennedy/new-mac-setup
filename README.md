@@ -59,8 +59,6 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 
 # Installed Software List
 
-This document provides an overview of the software and tools that the setup script installs, categorized to give you a clear understanding of each component's purpose and utility.
-
 ## Development Tools
 
 - **Xcode Command Line Tools**: Essential tools for macOS development, including compilers and command-line utilities.
