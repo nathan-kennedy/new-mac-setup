@@ -71,6 +71,11 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **iTerm2**: A replacement for Terminal and the successor to iTerm that brings powerful features for command-line users.
 - **Zsh**: Z shell, a Unix shell that can be used as an interactive login shell and as a command interpreter for shell scripting.
 
+## Shell Enhancements
+
+- **zsh-autosuggestions**: Suggests commands as you type based on history and completions.
+- **zsh-syntax-highlighting**: Provides syntax highlighting for the shell zsh; it highlights commands, parameters, and other syntax elements.
+
 ## Text Editors and IDEs
 
 - **Visual Studio Code**: A lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.

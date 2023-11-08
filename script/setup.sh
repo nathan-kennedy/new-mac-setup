@@ -73,6 +73,38 @@ fi
 if ! is_formula_installed zsh; then
     brew install zsh || failure_log+="ZSH installation failed\n"
 fi
+
+# Download Zsh auto-suggestions, syntax-highlighting, and 'z' for directory navigation
+echo "Installing Zsh plugins..."
+
+ZSH_CUSTOM="$HOME/.zsh"
+
+# Check if the directory exists for custom Zsh plugins, create if not
+if [ ! -d "$ZSH_CUSTOM" ]; then
+    mkdir -p "$ZSH_CUSTOM"
+fi
+
+# Clone Zsh auto-suggestions if it doesn't exist
+if [ ! -d "$ZSH_CUSTOM/zsh-autosuggestions" ]; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/zsh-autosuggestions" || failure_log+="Zsh auto-suggestions installation failed\n"
+else
+    echo "Zsh auto-suggestions already installed."
+fi
+
+# Clone Zsh syntax-highlighting if it doesn't exist
+if [ ! -d "$ZSH_CUSTOM/zsh-syntax-highlighting" ]; then
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/zsh-syntax-highlighting" || failure_log+="Zsh syntax-highlighting installation failed\n"
+else
+    echo "Zsh syntax-highlighting already installed."
+fi
+
+# Clone 'z' for directory navigation if it doesn't exist
+if [ ! -d "$ZSH_CUSTOM/z" ]; then
+    git clone https://github.com/rupa/z.git "$ZSH_CUSTOM/z" || failure_log+="Z directory navigation installation failed\n"
+else
+    echo "'z' directory navigation already installed."
+fi
+
 echo "You might be prompted for your password to change the default shell."
 if [ "$SHELL" != "/opt/homebrew/bin/zsh" ]; then
     chsh -s /opt/homebrew/bin/zsh || failure_log+="Changing default shell to ZSH failed\n"
