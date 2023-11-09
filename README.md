@@ -1,4 +1,4 @@
-_HASN'T BEEN TESTED YET - FEEL FREE TO TEST YOURSELF - WILL BE RUNNING THIS SCRIPT IN THE NEXT COUPLE DAYS ON AN OLDER MAC AND AGAIN IN A VIRTUAL MACHINE ON AN M1 - I'LL UPDATE THIS README WHEN FINISHED_
+_HASN'T BEEN TESTED YET - FEEL FREE TO TEST YOURSELF ON A NEW MACHINE OR FRESH OS INSTALL- I'LL BE TESTING THIS SCRIPT ON AN OLDER MAC AND AGAIN IN A VIRTUAL MACHINE ON AN M1 MAX - I'LL UPDATE THIS README WHEN FINISHED_
 
 # Mac Development Environment Setup Script
 
@@ -6,10 +6,10 @@ Welcome to the Mac Development Environment Setup Script repository! This script 
 
 ## Features
 
-- **Idempotent**: Run the script multiple times without causing unwanted side effects.
-- **Error Handling**: Detects and logs errors to ensure a smooth setup process.
 - **Automated Installation**: Automates the installation of essential tools, utilities, and applications to get you up and running quickly.
 - **Customizable**: Easily add or remove applications to suit your needs.
+- **Error Handling**: Detects and logs errors to ensure a smooth setup process.
+- **Idempotence**: Run the script multiple times without causing unwanted side effects.
 
 ## Getting Started
 
@@ -62,10 +62,10 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 ## Development Tools
 
 - **Ansible**: An open-source automation platform that enables infrastructure as code, task automation, application deployment, and encryption.
-- **Xcode Command Line Tools**: Essential tools for macOS development, including compilers and command-line utilities.
-- **Homebrew**: The "missing package manager" for macOS, used to install and manage software.
 - **Cask**: Extension for Homebrew for installing macOS native applications.
+- **Homebrew**: The "missing package manager" for macOS, used to install and manage software.
 - **mas**: Mac App Store command-line interface that simplifies the installation of App Store applications.
+- **Xcode Command Line Tools**: Essential tools for macOS development, including compilers and command-line utilities.
 
 ## Terminals and Shells
 
@@ -79,8 +79,8 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 
 ## Text Editors and IDEs
 
-- **Visual Studio Code**: A lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.
 - **neovim**: A hyperextensible Vim-based text editor.
+- **Visual Studio Code**: A lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.
 
 ## Command-Line Utilities
 
