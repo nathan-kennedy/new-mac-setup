@@ -164,6 +164,8 @@ done
 
 # *Install command-line tools and applications via Homebrew:*
 
+
+# **Ansible**: An open-source automation platform that enables infrastructure as code, task automation, application deployment, and encryption.
 # **Archey4**: A script to display system information in terminal. It even incudes retro Apple logo ascii art.
 # **Asciinema**: An open-source solution for recording terminal sessions and sharing them.
 # **Bat**: Adds syntax highlighting for a large number of languages, git integration, etc to 'cat' command.
@@ -178,15 +180,22 @@ done
 # **Htop**: An interactive system monitor designed as an alternative to the Unix program 'top'.
 # **ImageMagick**: A software suite to create, edit and compose bitmap images in a variety of formats.
 # **Inxi**: A full-featured system information script written in bash.
+# **Jpegoptim**: A utility to optimize and compress JPEG files without losing quality.
 # **Neovim**: An extension of Vim that includes new features, simplified code, and a plugin architecture.
+# **Optipng**: A PNG optimizer that recompresses image files to a smaller size without losing any information.
 # **Pandoc**: A universal document converter, able to convert files from one markup format into another.
+# **Ranger**: A console file manager with VI key bindings, offering a minimalistic and powerful visual interface.
 # **Rar**: A command line utility to create RAR archives.
 # **Speedtest-cli**: Command line interface for testing internet bandwidth using speedtest.net.
 # **Tealdeer**: A very fast implementation of 'tldr' client providing simplified, community-driven man pages.
+# **Trash**: A safer alternative to `rm`, allowing you to move files to the trash instead of immediate irreversible deletion.
 # **Tree**: A recursive directory listing command that produces a depth-indented listing of files.
+# **Unar**: A command-line utility for extracting archives, known for its support of multiple formats and its cross-platform compatibility.
+# **Webp**: A command-line tool to convert images to the WebP format, which provides superior lossless and lossy compression for web images.
 # **Wifi-password**: A script to quickly find the password of the WiFi you're connected to.
 # **Z**: A command line tool that allows you to navigate your filesystem super fast using 'frecency' (combination of frequency and recency).
-brew install archey4 asciinema bat colordiff diff-so-fancy duf exa fd fzf git glances htop imagemagick inxi neovim pandoc rar speedtest-cli tealdeer tree wifi-password z || failure_log+="Installation of one or more command-line tools failed\n"
+# **Zip**: A command-line utility for packaging and compressing (archiving) files in a zip format, widely used for file distribution.
+brew install ansible archey4 asciinema bat colordiff diff-so-fancy duf exa fd fzf git glances htop imagemagick inxi jpegoptim neovim optipng pandoc ranger rar speedtest-cli tealdeer trash tree unar webp wifi-password z zip|| failure_log+="Installation of one or more command-line tools failed\n"
 
 # *Install Node and Python via Homebrew:*
 

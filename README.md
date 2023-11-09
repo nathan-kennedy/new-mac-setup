@@ -61,6 +61,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 
 ## Development Tools
 
+- **Ansible**: An open-source automation platform that enables infrastructure as code, task automation, application deployment, and encryption.
 - **Xcode Command Line Tools**: Essential tools for macOS development, including compilers and command-line utilities.
 - **Homebrew**: The "missing package manager" for macOS, used to install and manage software.
 - **Cask**: Extension for Homebrew for installing macOS native applications.
@@ -95,13 +96,20 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **glances**: A cross-platform system monitoring tool written in Python.
 - **htop**: An interactive process viewer for Unix systems.
 - **inxi**: A powerful command-line system information script for console and IRC.
+- **Jpegoptim**: A utility to optimize and compress JPEG files without losing quality.
+- **Optipng**: A PNG optimizer that recompresses image files to a smaller size without losing any information.
+- **pandoc**: A universal document converter.
+- **Ranger**: A console file manager with VI key bindings, offering a minimalistic and powerful visual interface.
 - **rar**: A command-line tool for creating and viewing RAR archives.
 - **speedtest-cli**: Command line interface for testing internet bandwidth using speedtest.net.
-- **pandoc**: A universal document converter.
 - **tealdeer**: A very fast implementation of `tldr` in Rust: Simplified and community-driven man pages.
+- **Trash**: A safer alternative to `rm`, allowing you to move files to the trash instead of immediate irreversible deletion.
 - **tree**: A recursive directory listing command that produces a depth-indented listing of files.
+- **Unar**: A command-line utility for extracting archives, known for its support of multiple formats and its cross-platform compatibility.
+- **Webp**: A command-line tool to convert images to the WebP format, which provides superior lossless and lossy compression for web images.
 - **wifi-password**: Shows the current WiFi network password.
 - **z**: Tracks the most used directories to allow quick navigation.
+- **Zip**: A command-line utility for packaging and compressing (archiving) files in a zip format, widely used for file distribution.
 
 ## Programming Languages
 
