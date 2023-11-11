@@ -181,6 +181,7 @@ done
 # **ImageMagick**: A software suite to create, edit and compose bitmap images in a variety of formats.
 # **Inxi**: A full-featured system information script written in bash.
 # **Jpegoptim**: A utility to optimize and compress JPEG files without losing quality.
+# **Neofetch**: System profiler with ascii art.
 # **Neovim**: An extension of Vim that includes new features, simplified code, and a plugin architecture.
 # **Optipng**: A PNG optimizer that recompresses image files to a smaller size without losing any information.
 # **Pandoc**: A universal document converter, able to convert files from one markup format into another.
@@ -195,7 +196,7 @@ done
 # **Wifi-password**: A script to quickly find the password of the WiFi you're connected to.
 # **Z**: A command line tool that allows you to navigate your filesystem super fast using 'frecency' (combination of frequency and recency).
 # **Zip**: A command-line utility for packaging and compressing (archiving) files in a zip format, widely used for file distribution.
-brew install ansible archey4 asciinema bat colordiff diff-so-fancy duf exa fd fzf git glances htop imagemagick inxi jpegoptim neovim optipng pandoc ranger rar speedtest-cli tealdeer trash tree unar webp wifi-password z zip|| failure_log+="Installation of one or more command-line tools failed\n"
+brew install ansible archey4 asciinema bat colordiff diff-so-fancy duf exa fd fzf git glances htop imagemagick inxi jpegoptim neofetch neovim optipng pandoc ranger rar speedtest-cli tealdeer trash tree unar webp wifi-password z zip|| failure_log+="Installation of one or more command-line tools failed\n"
 
 # *Install Node and Python via Homebrew:*
 
