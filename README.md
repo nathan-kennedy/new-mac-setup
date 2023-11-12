@@ -134,3 +134,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **aldente**: A charging limiter for MacBooks to help extend the battery's lifespan.
 - **clean my Mac x**: A cleaning and optimization tool for Mac.
 - **utm**: A virtual machines manager for Mac, designed to create virtual machines that can run on Apple Silicon.
+
+## Font
+
+- **JetBrainsMono Nerd Font**: An awesome developer font with all the necessary symbols for the custom prompt in the .zshrc config file.

@@ -133,6 +133,12 @@ if ! is_cask_installed visual-studio-code; then
     brew install --cask visual-studio-code || failure_log+="Visual Studio Code installation failed\n"
 fi
 
+# Install JetBrainsMono Nerd Font
+# **JetBrainsMono Nerd Font**: An awesome developer font with all the Nerd Font symbols needed to take advantage of the custom prompt from the .zshrc config file included in this repo.
+if ! is_cask_installed font-jetbrains-mono-nerd-font; then
+    brew install --cask font-jetbrains-mono-nerd-font || failure_log+="JetBrainsMono Nerd Font installation failed\n"
+fi
+
 # Install mas (Mac App Store CLI)
 # **Mas**: A command-line interface for the Mac App Store.
 if ! is_formula_installed mas; then
