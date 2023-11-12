@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Preparing a new Mac for development
 # Script Created by Nathan Kennedy nathankennedy1@gmail.com
