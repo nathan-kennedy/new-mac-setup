@@ -95,7 +95,6 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **fd**: A simple, fast and user-friendly alternative to 'find'.
 - **fzf**: A general-purpose command-line fuzzy finder.
 - **glances**: A cross-platform system monitoring tool written in Python.
-- **htop**: An interactive process viewer for Unix systems.
 - **imagemagick**: A versatile image processing tool that supports numerous formats, capable of resizing, converting, and manipulating images.
 - **inxi**: A powerful command-line system information script for console and IRC.
 - **Jpegoptim**: A utility to optimize and compress JPEG files without losing quality.
