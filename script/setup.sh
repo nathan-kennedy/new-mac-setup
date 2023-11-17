@@ -172,7 +172,6 @@ done
 
 
 # **Ansible**: An open-source automation platform that enables infrastructure as code, task automation, application deployment, and encryption.
-# **Archey4**: A script to display system information in terminal. It even incudes retro Apple logo ascii art.
 # **Asciinema**: An open-source solution for recording terminal sessions and sharing them.
 # **Bat**: Adds syntax highlighting for a large number of languages, git integration, etc to 'cat' command.
 # **Btop**: An interactive system monitor designed as an alternative to the Unix program 'top' (btop is way better than htop).
@@ -185,9 +184,7 @@ done
 # **Fzf**: A flexible and fast command-line fuzzy finder to enhance shell command efficiency.
 # **Gifsicle**: Gifsicle is a command-line tool for editing and optimizing GIF images, known for efficiently reducing file sizes while maintaining quality.
 # **Git**: An open-source version control system used to handle all kinds of projects, large and small.
-# **Glances**: A command line 'top-like' system monitoring tool.
-# **ImageMagick**: A software suite to create, edit and compose bitmap images in a variety of formats.
-# **Inxi**: A full-featured system information script written in bash.
+ # **ImageMagick**: A software suite to create, edit and compose bitmap images in a variety of formats.
 # **Jpegoptim**: A utility to optimize and compress JPEG files without losing quality.
 # **Neofetch**: System profiler with ascii art.
 # **Neovim**: An extension of Vim that includes new features, simplified code, and a plugin architecture.
@@ -204,7 +201,7 @@ done
 # **Wifi-password**: A script to quickly find the password of the WiFi you're connected to.
 # **Z**: A command line tool that allows you to navigate your filesystem super fast using 'frecency' (combination of frequency and recency).
 # **Zip**: A command-line utility for packaging and compressing (archiving) files in a zip format, widely used for file distribution.
-brew install ansible archey4 asciinema bat colordiff diff-so-fancy duf exa fd ffmpeg fzf gifsicle git glances btop imagemagick inxi jpegoptim neofetch neovim optipng pandoc ranger rar speedtest-cli tealdeer trash tree unar webp wifi-password z zip|| failure_log+="Installation of one or more command-line tools failed\n"
+brew install ansible asciinema bat colordiff diff-so-fancy duf exa fd ffmpeg fzf gifsicle git btop imagemagick jpegoptim neofetch neovim optipng pandoc ranger rar speedtest-cli tealdeer trash tree unar webp wifi-password z zip|| failure_log+="Installation of one or more command-line tools failed\n"
 
 # *Install Node and Python via Homebrew:*
 
