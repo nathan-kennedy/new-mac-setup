@@ -93,7 +93,9 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **duf**: A better alternative for checking disk usage.
 - **exa**: A modern replacement for `ls` with color and Git integration.
 - **fd**: A simple, fast and user-friendly alternative to 'find'.
-- **fzf**: A general-purpose command-line fuzzy finder.
+- **Ffmpeg**: FFmpeg is a versatile multimedia tool used for audio and video processing, including conversion, compression, and streaming. It supports a wide range of formats.
+- **Fzf**: A flexible and fast command-line fuzzy finder to enhance shell command efficiency.
+- **Gifsicle**: Gifsicle is a command-line tool for editing and optimizing GIF images, known for efficiently reducing file sizes while maintaining quality.
 - **glances**: A cross-platform system monitoring tool written in Python.
 - **imagemagick**: A versatile image processing tool that supports numerous formats, capable of resizing, converting, and manipulating images.
 - **inxi**: A powerful command-line system information script for console and IRC.
