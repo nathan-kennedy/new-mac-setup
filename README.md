@@ -87,10 +87,11 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **archey4**: A system information tool designed for macOS.
 - **asciinema**: Terminal session recorder that lets you record and share your command-line workflows.
 - **bat**: A clone of `cat` with syntax highlighting and Git integration.
+- **btop**: An interactive system monitor designed as an alternative to the Unix program 'top' (btop is way better than htop).
 - **colordiff**: A wrapper for `diff` and produces the same output but with colored syntax.
-- **diff-so-fancy**: Improves the display of diff outputs.
+- **diff-so-fancy**: Improves the display of `diff` outputs.
 - **duf**: A better alternative for checking disk usage.
-- **exa**: A modern replacement for 'ls' with color and Git integration.
+- **exa**: A modern replacement for `ls` with color and Git integration.
 - **fd**: A simple, fast and user-friendly alternative to 'find'.
 - **fzf**: A general-purpose command-line fuzzy finder.
 - **glances**: A cross-platform system monitoring tool written in Python.
