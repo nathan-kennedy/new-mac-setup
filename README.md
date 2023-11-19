@@ -23,11 +23,14 @@ Welcome to the Mac Development Environment Setup Script repository! This script 
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/mac-dev-setup-script.git
-cd mac-dev-setup-script
+git clone https://github.com/nathan-kennedy/new-mac-setup.git
 ```
 
-2. Make the script executable:
+2. Go to directory and make the script executable:
+
+```bash
+cd mac-dev-setup-script
+```
 
 ```bash
 chmod +x setup.sh
