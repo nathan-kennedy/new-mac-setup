@@ -98,7 +98,7 @@ else
     echo "Zsh syntax-highlighting already installed."
 fi
 
-# Clone 'z' for directory navigation if it doesn't exist
+# Clone 'z' for directory navigation if it doesn't exist. Z will be installed via homebrew, but this is not a redundency, this repo is needed for extended funcionality allowed by using Zsh.
 if [ ! -d "$ZSH_CUSTOM/z" ]; then
     git clone https://github.com/rupa/z.git "$ZSH_CUSTOM/z" || failure_log+="Z directory navigation installation failed\n"
 else
@@ -169,7 +169,6 @@ for app in "${apps[@]}"; do
 done
 
 # *Install command-line tools and applications via Homebrew:*
-
 
 # **Ansible**: An open-source automation platform that enables infrastructure as code, task automation, application deployment, and encryption.
 # **Asciinema**: An open-source solution for recording terminal sessions and sharing them.
