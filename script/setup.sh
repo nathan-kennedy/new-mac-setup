@@ -193,6 +193,7 @@ done
 # **Ranger**: A console file manager with VI key bindings, offering a minimalistic and powerful visual interface.
 # **Rar**: A command line utility to create RAR archives.
 # **Speedtest-cli**: Command line interface for testing internet bandwidth using speedtest.net.
+# **Starship**: A powerful prompt crafting tool for your shell.
 # **Tealdeer**: A very fast implementation of 'tldr' client providing simplified, community-driven man pages.
 # **Trash**: A safer alternative to `rm`, allowing you to move files to the trash instead of immediate irreversible deletion.
 # **Tree**: A recursive directory listing command that produces a depth-indented listing of files.
@@ -201,7 +202,7 @@ done
 # **Wifi-password**: A script to quickly find the password of the WiFi you're connected to.
 # **Z**: A command line tool that allows you to navigate your filesystem super fast using 'frecency' (combination of frequency and recency).
 # **Zip**: A command-line utility for packaging and compressing (archiving) files in a zip format, widely used for file distribution.
-brew install ansible asciinema bat colordiff diff-so-fancy duf exa fd ffmpeg fzf gifsicle git btop imagemagick jpegoptim neofetch neovim optipng pandoc ranger rar speedtest-cli tealdeer trash tree unar webp wifi-password z zip|| failure_log+="Installation of one or more command-line tools failed\n"
+brew install ansible asciinema bat colordiff diff-so-fancy duf exa fd ffmpeg fzf gifsicle git btop imagemagick jpegoptim neofetch neovim optipng pandoc ranger rar speedtest-cli starship tealdeer trash tree unar webp wifi-password z zip|| failure_log+="Installation of one or more command-line tools failed\n"
 
 # *Install Node and Python via Homebrew:*
 

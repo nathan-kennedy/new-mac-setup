@@ -74,6 +74,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 
 ## Shell Enhancements
 
+- **starship**: A powerful prompt crafting tool for your shell.
 - **zsh-autosuggestions**: Suggests commands as you type based on history and completions.
 - **zsh-syntax-highlighting**: Provides syntax highlighting for the shell zsh; it highlights commands, parameters, and other syntax elements.
 
