@@ -98,7 +98,7 @@ else
     echo "Zsh syntax-highlighting already installed."
 fi
 
-# Clone 'z' for directory navigation if it doesn't exist. Z will be installed via homebrew, but this is not a redundency, this repo is needed for extended funcionality allowed by using Zsh.
+# Clone 'z' for directory navigation if it doesn't exist. Z will be installed via homebrew, but this is not a redundancy, this repo is needed for extended functionality allowed by using Zsh.
 if [ ! -d "$ZSH_CUSTOM/z" ]; then
     git clone https://github.com/rupa/z.git "$ZSH_CUSTOM/z" || failure_log+="Z directory navigation installation failed\n"
 else
@@ -149,9 +149,9 @@ fi
 echo "Please ensure you are logged into the App Store. Press Enter when ready."
 read -p ""
 
-# *Install software from the App Store with auro id search in case you want to add applications to the 'apps' list/array*
+# *Install software from the App Store with app id search in case you want to add applications to the 'apps' list/array*
 
-# **Hidden Bar**: A Mac utility that helps to hide menu bar items to declutter the screen.
+# **Hidden Bar**: A Mac utility that helps to hide menu bar items to de-clutter the screen.
 # **DropOver**: A MacOS app to create a temporary shelf for drag and drop files.
 # Define the app names
 apps=("Hidden Bar" "DropOver")
@@ -175,7 +175,7 @@ done
 # **Bat**: Adds syntax highlighting for a large number of languages, git integration, etc to 'cat' command.
 # **Btop**: An interactive system monitor designed as an alternative to the Unix program 'top' (btop is way better than htop).
 # **Colordiff**: A wrapper for 'diff' that produces the same output but with coloured syntax and vertical alignment.
-# **Diff-so-fancy**: A series of scripts to make Git's diff output look fancier and esier to understand.
+# **Diff-so-fancy**: A series of scripts to make Git's diff output look fancier and easier to understand.
 # **Duf**: Disk Usage/Free Utility with a best-in-slot visual presentation.
 # **Exa**: A replacement for the 'ls' command with improved features like colors and file permissions.
 # **Fd**: A fast and user-friendly alternative to the classic 'find' command within the terminal.
@@ -258,6 +258,6 @@ fi
 
 # Error handling will log errors and list errors at the end of the script but the script will continue to run even if an error occurs.
 
-# Feel free to remove or add packages and software to suit your needs. Keep in mind the top-to-bottom order of commands. If you want a cask package, Homebrew needs to be installed first. Also anything being installed from the App store needs to excecute after 'mas' installation on line 44.
+# Feel free to remove or add packages and software to suit your needs. Keep in mind the top-to-bottom order of commands. If you want a cask package, Homebrew needs to be installed first. Also anything being installed from the App store needs to execute after 'mas' installation on line 44.
 
-# Make sure you've logged into the App Store before running this script since 'mas' requires you to be logged in. If you're adding software to the script from the App store be sure to use the apropriate id number (App names do not work with mas).
+# Make sure you've logged into the App Store before running this script since 'mas' requires you to be logged in. If you're adding software to the script from the App store be sure to use the appropriate id number (App names do not work with mas).

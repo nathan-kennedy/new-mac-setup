@@ -83,7 +83,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 
 ## Text Editors and IDEs
 
-- **neovim**: A hyperextensible Vim-based text editor.
+- **neovim**: A hyper-extensible Vim-based text editor.
 - **Visual Studio Code**: A lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.
 
 ## Command-Line Utilities
