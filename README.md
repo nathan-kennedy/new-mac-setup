@@ -67,7 +67,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **Ansible**: An open-source automation platform that enables infrastructure as code, task automation, application deployment, and encryption.
 - **Cask**: Extension for Homebrew for installing macOS native applications.
 - **Homebrew**: The "missing package manager" for macOS, used to install and manage software.
-- **mas**: Mac App Store command-line interface that simplifies the installation of App Store applications.
+- **Mas**: Mac App Store command-line interface that simplifies the installation of App Store applications.
 - **Xcode Command Line Tools**: Essential tools for macOS development, including compilers and command-line utilities.
 
 ## Terminals and Shells
@@ -119,8 +119,8 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 
 ## Programming Languages
 
-- **node.js**: A JavaScript runtime for server-side programming.
-- **python**: A versatile scripting language used for a wide range of applications.
+- **Node.js**: A JavaScript runtime for server-side programming.
+- **Python**: A versatile scripting language used for a wide range of applications.
 
 ## Productivity Tools
 
