@@ -184,7 +184,7 @@ done
 # **Gifsicle**: Gifsicle is a command-line tool for editing and optimizing GIF images, known for efficiently reducing file sizes while maintaining quality.
 # **Git**: An open-source version control system used to handle all kinds of projects, large and small.
  # **ImageMagick**: A software suite to create, edit and compose bitmap images in a variety of formats.
-# **Jpegoptim**: A utility to optimize and compress JPEG files without losing quality.
+# **Jpegoptim**: A utility to optimize and compress JPEG files without losing quality.µ
 # **Jq**: A command-line tool for processing JSON data, allowing for filtering, transformation, and extraction of information.
 # **Neofetch**: System profiler with ascii art.
 # **Neovim**: An extension of Vim that includes new features, simplified code, and a plugin architecture.
