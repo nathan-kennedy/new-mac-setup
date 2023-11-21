@@ -185,6 +185,7 @@ done
 # **Git**: An open-source version control system used to handle all kinds of projects, large and small.
  # **ImageMagick**: A software suite to create, edit and compose bitmap images in a variety of formats.
 # **Jpegoptim**: A utility to optimize and compress JPEG files without losing quality.
+# **Jq**: A command-line tool for processing JSON data, allowing for filtering, transformation, and extraction of information.
 # **Neofetch**: System profiler with ascii art.
 # **Neovim**: An extension of Vim that includes new features, simplified code, and a plugin architecture.
 # **Optipng**: A PNG optimizer that recompresses image files to a smaller size without losing any information.
@@ -201,7 +202,7 @@ done
 # **Wifi-password**: A script to quickly find the password of the WiFi you're connected to.
 # **Z**: A command line tool that allows you to navigate your filesystem super fast using 'frecency' (combination of frequency and recency).
 # **Zip**: A command-line utility for packaging and compressing (archiving) files in a zip format, widely used for file distribution.
-brew install ansible asciinema bat colordiff diff-so-fancy duf exa fd ffmpeg fzf gifsicle git btop imagemagick jpegoptim neofetch neovim optipng pandoc ranger rar speedtest-cli starship tealdeer trash tree unar webp wifi-password z zip|| failure_log+="Installation of one or more command-line tools failed\n"
+brew install ansible asciinema bat btop colordiff diff-so-fancy duf exa fd ffmpeg fzf gifsicle git imagemagick jpegoptim jq neofetch neovim optipng pandoc ranger rar speedtest-cli starship tealdeer trash tree unar webp wifi-password z zip|| failure_log+="Installation of one or more command-line tools failed\n"
 
 # *Install Node and Python via Homebrew:*
 
