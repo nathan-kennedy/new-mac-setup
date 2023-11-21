@@ -77,44 +77,44 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 
 ## Shell Enhancements
 
-- **starship**: A powerful prompt crafting tool for your shell.
-- **zsh-autosuggestions**: Suggests commands as you type based on history and completions.
-- **zsh-syntax-highlighting**: Provides syntax highlighting for the shell zsh; it highlights commands, parameters, and other syntax elements.
+- **Starship**: A powerful prompt crafting tool for your shell.
+- **Zsh-autosuggestions**: Suggests commands as you type based on history and completions.
+- **Zsh-syntax-highlighting**: Provides syntax highlighting for the shell zsh; it highlights commands, parameters, and other syntax elements.
 
 ## Text Editors and IDEs
 
-- **neovim**: A hyper-extensible Vim-based text editor.
+- **Neovim**: A hyper-extensible Vim-based text editor.
 - **Visual Studio Code**: A lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.
 
 ## Command-Line Utilities
 
-- **archey4**: A system information tool designed for macOS.
-- **asciinema**: Terminal session recorder that lets you record and share your command-line workflows.
-- **bat**: A clone of `cat` with syntax highlighting and Git integration.
-- **btop**: An interactive system monitor designed as an alternative to the Unix program 'top' (btop is way better than htop).
-- **colordiff**: A wrapper for `diff` and produces the same output but with colored syntax.
-- **diff-so-fancy**: Improves the display of `diff` outputs.
-- **duf**: A better alternative for checking disk usage.
-- **exa**: A modern replacement for `ls` with color and Git integration.
-- **fd**: A simple, fast and user-friendly alternative to 'find'.
+- **Archey4**: A system information tool designed for macOS.
+- **Asciinema**: Terminal session recorder that lets you record and share your command-line workflows.
+- **Bat**: A clone of `cat` with syntax highlighting and Git integration.
+- **Btop**: An interactive system monitor designed as an alternative to the Unix program 'top' (btop is way better than htop).
+- **Colordiff**: A wrapper for `diff` and produces the same output but with colored syntax.
+- **Diff-so-fancy**: Improves the display of `diff` outputs.
+- **Duf**: A better alternative for checking disk usage.
+- **Exa**: A modern replacement for `ls` with color and Git integration.
+- **Fd**: A simple, fast and user-friendly alternative to 'find'.
 - **Ffmpeg**: FFmpeg is a versatile multimedia tool used for audio and video processing, including conversion, compression, and streaming. It supports a wide range of formats.
 - **Fzf**: A flexible and fast command-line fuzzy finder to enhance shell command efficiency.
 - **Gifsicle**: Gifsicle is a command-line tool for editing and optimizing GIF images, known for efficiently reducing file sizes while maintaining quality.
-- **imagemagick**: A versatile image processing tool that supports numerous formats, capable of resizing, converting, and manipulating images.
+- **Imagemagick**: A versatile image processing tool that supports numerous formats, capable of resizing, converting, and manipulating images.
 - **Jpegoptim**: A utility to optimize and compress JPEG files without losing quality.
 - **Jq**: A command-line tool for processing JSON data, allowing for filtering, transformation, and extraction of information.
 - **Optipng**: A PNG optimizer that recompresses image files to a smaller size without losing any information.
-- **pandoc**: A universal document converter.
+- **Pandoc**: A universal document converter.
 - **Ranger**: A console file manager with VI key bindings, offering a minimalistic and powerful visual interface.
-- **rar**: A command-line tool for creating and viewing RAR archives.
-- **speedtest-cli**: Command line interface for testing internet bandwidth using speedtest.net.
-- **tealdeer**: A very fast implementation of `tldr` in Rust: Simplified and community-driven man pages.
+- **Rar**: A command-line tool for creating and viewing RAR archives.
+- **Speedtest-cli**: Command line interface for testing internet bandwidth using speedtest.net.
+- **Tealdeer**: A very fast implementation of `tldr` in Rust: Simplified and community-driven man pages.
 - **Trash**: A safer alternative to `rm`, allowing you to move files to the trash instead of immediate irreversible deletion.
-- **tree**: A recursive directory listing command that produces a depth-indented listing of files.
+- **Tree**: A recursive directory listing command that produces a depth-indented listing of files.
 - **Unar**: A command-line utility for extracting archives, known for its support of multiple formats and its cross-platform compatibility.
 - **Webp**: A command-line tool to convert images to the WebP format, which provides superior lossless and lossy compression for web images.
-- **wifi-password**: Shows the current WiFi network password.
-- **z**: Tracks the most used directories to allow quick navigation.
+- **Wifi-password**: Shows the current WiFi network password.
+- **Z**: Tracks the most used directories to allow quick navigation.
 - **Zip**: A command-line utility for packaging and compressing (archiving) files in a zip format, widely used for file distribution.
 
 ## Programming Languages
@@ -124,22 +124,22 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 
 ## Productivity Tools
 
-- **alt-tab**: A window switcher for macOS that allows switching between windows in a more convenient way.
-- **cheatsheet**: An app that shows keyboard shortcuts in an overlay window.
+- **Alt-tab**: A window switcher for macOS that allows switching between windows in a more convenient way.
+- **Cheatsheet**: An app that shows keyboard shortcuts in an overlay window.
 - **DropOver**: A utility that makes dragging and dropping files or content easier.
 - **Hidden Bar**: An ultra-light MacOS utility that helps hide menu bar icons.
-- **logseq**: A privacy-first, open-source knowledge base that works on top of local plain-text Markdown and Org-mode files.
+- **LogSeq**: A privacy-first, open-source knowledge base that works on top of local plain-text Markdown and Org-mode files.
 - **Raycast**: A productivity tool allowing you to control your tools with a few keystrokes.
 
 ## Browsers
 
-- **brave browser**: A free and open-source web browser based on the Chromium web browser and its Blink engine focused on privacy.
+- **Brave browser**: A free and open-source web browser based on the Chromium web browser and its Blink engine focused on privacy.
 
 ## Utility Apps
 
-- **aldente**: A charging limiter for MacBooks to help extend the battery's lifespan.
-- **clean my Mac x**: A cleaning and optimization tool for Mac.
-- **utm**: A virtual machines manager for Mac, designed to create virtual machines that can run on Apple Silicon.
+- **AlDente**: A charging limiter for MacBooks to help extend the battery's lifespan.
+- **Clean My Mac X**: A cleaning and optimization tool for Mac.
+- **UTM**: A virtual machines manager for Mac, designed to create virtual machines that can run on Apple Silicon.
 
 ## Font
 
