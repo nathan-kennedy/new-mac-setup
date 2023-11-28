@@ -98,6 +98,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **Exa**: A modern replacement for `ls` with color and Git integration.
 - **Fd**: A simple, fast and user-friendly alternative to 'find'.
 - **Ffmpeg**: FFmpeg is a versatile multimedia tool used for audio and video processing, including conversion, compression, and streaming. It supports a wide range of formats.
+- **Fio**: A versatile I/O benchmarking tool, ideal for testing and analyzing the performance of various storage devices. It provides insights into latency, throughput, and IOPS.
 - **Fzf**: A flexible and fast command-line fuzzy finder to enhance shell command efficiency.
 - **Gifsicle**: Gifsicle is a command-line tool for editing and optimizing GIF images, known for efficiently reducing file sizes while maintaining quality.
 - **Imagemagick**: A versatile image processing tool that supports numerous formats, capable of resizing, converting, and manipulating images.

@@ -180,6 +180,7 @@ done
 # **Exa**: A replacement for the 'ls' command with improved features like colors and file permissions.
 # **Fd**: A fast and user-friendly alternative to the classic 'find' command within the terminal.
 # **Ffmpeg**: FFmpeg is a versatile multimedia tool used for audio and video processing, including conversion, compression, and streaming. It supports a wide range of formats.
+# **Fio**: A versatile I/O benchmarking tool, ideal for testing and analyzing the performance of various storage devices. It provides insights into latency, throughput, and IOPS.
 # **Fzf**: A flexible and fast command-line fuzzy finder to enhance shell command efficiency.
 # **Gifsicle**: Gifsicle is a command-line tool for editing and optimizing GIF images, known for efficiently reducing file sizes while maintaining quality.
 # **Git**: An open-source version control system used to handle all kinds of projects, large and small.
@@ -202,7 +203,7 @@ done
 # **Wifi-password**: A script to quickly find the password of the WiFi you're connected to.
 # **Z**: A command line tool that allows you to navigate your filesystem super fast using 'frecency' (combination of frequency and recency).
 # **Zip**: A command-line utility for packaging and compressing (archiving) files in a zip format, widely used for file distribution.
-brew install ansible asciinema bat btop colordiff diff-so-fancy duf exa fd ffmpeg fzf gifsicle git imagemagick jpegoptim jq neofetch neovim optipng pandoc ranger rar speedtest-cli starship tealdeer trash tree unar webp wifi-password z zip|| failure_log+="Installation of one or more command-line tools failed\n"
+brew install ansible asciinema bat btop colordiff diff-so-fancy duf exa fd ffmpeg fio fzf gifsicle git imagemagick jpegoptim jq neofetch neovim optipng pandoc ranger rar speedtest-cli starship tealdeer trash tree unar webp wifi-password z zip|| failure_log+="Installation of one or more command-line tools failed\n"
 
 # *Install Node and Python via Homebrew:*
 
