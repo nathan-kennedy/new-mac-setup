@@ -114,7 +114,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **Tree**: A recursive directory listing command that produces a depth-indented listing of files.
 - **Unar**: A command-line utility for extracting archives, known for its support of multiple formats and its cross-platform compatibility.
 - **Webp**: A command-line tool to convert images to the WebP format, which provides superior lossless and lossy compression for web images.
-- **Wifi-password**: Shows the current WiFi network password.
+- **Wifi-password**: Shows the current WiFi network password, assuming you've already entered it at some point.
 - **Z**: Tracks the most used directories to allow quick navigation.
 - **Zip**: A command-line utility for packaging and compressing (archiving) files in a zip format, widely used for file distribution.
 
