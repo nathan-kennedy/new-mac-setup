@@ -70,7 +70,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **Mas**: Mac App Store command-line interface that simplifies the installation of App Store applications.
 - **Xcode Command Line Tools**: Essential tools for macOS development, including compilers and command-line utilities.
 
-## Terminals and Shells
+## Terminal and Shell
 
 - **iTerm2**: A replacement for Terminal and the successor to iTerm that brings powerful features for command-line users.
 - **Zsh**: Z shell, a Unix shell that can be used as an interactive login shell and as a command interpreter for shell scripting.
@@ -81,7 +81,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **Zsh-autosuggestions**: Suggests commands as you type based on history and completions.
 - **Zsh-syntax-highlighting**: Provides syntax highlighting for the shell zsh; it highlights commands, parameters, and other syntax elements.
 
-## Text Editors and IDEs
+## Text Editors
 
 - **Neovim**: A hyper-extensible Vim-based text editor.
 - **Visual Studio Code**: A lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.
@@ -118,7 +118,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **Z**: Tracks the most used directories to allow quick navigation.
 - **Zip**: A command-line utility for packaging and compressing (archiving) files in a zip format, widely used for file distribution.
 
-## Programming Languages
+## Languages Support
 
 - **Node.js**: A JavaScript runtime for server-side programming.
 - **Python**: A versatile scripting language used for a wide range of applications.
@@ -136,7 +136,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 
 - **Brave browser**: A free and open-source web browser based on the Chromium web browser and its Blink engine focused on privacy.
 
-## Utility Apps
+## Utility Applications
 
 - **AlDente**: A charging limiter for MacBooks to help extend the battery's lifespan.
 - **Clean My Mac X**: A cleaning and optimization tool for Mac.
