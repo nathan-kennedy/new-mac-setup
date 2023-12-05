@@ -180,7 +180,7 @@ done
 # **Colordiff**: A wrapper for 'diff' that produces the same output but with coloured syntax and vertical alignment.
 # **Diff-so-fancy**: A series of scripts to make Git's diff output look fancier and easier to understand.
 # **Duf**: Disk Usage/Free Utility with a best-in-slot visual presentation.
-# **Dust**: An enhanced 'du' written in rust for more intuitive and useful display of information.
+# **Dust**: An enhanced `du` written in rust for more intuitive and useful display of information.
 # **Eza**: A modern replacement for `ls`; better suited for displaying all directories, or all files.
 # **Fd**: A fast and user-friendly alternative to the classic 'find' command within the terminal.
 # **Ffmpeg**: FFmpeg is a versatile multimedia tool used for audio and video processing, including conversion, compression, and streaming. It supports a wide range of formats.

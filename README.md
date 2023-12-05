@@ -95,7 +95,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **Colordiff**: A wrapper for `diff` and produces the same output but with colored syntax.
 - **Diff-so-fancy**: Improves the display of `diff` outputs.
 - **Duf**: A better alternative for checking device disk usage.
-- **Dust**: An enhanced 'du' written in Rust for more intuitive and useful display of info.
+- **Dust**: An enhanced `du` written in Rust for more intuitive and useful display of info.
 - **Eza**: A modern replacement for `ls`; better suited for listing only directories, or only files.
 - **Fd**: A simple, fast and user-friendly alternative to 'find'.
 - **Ffmpeg**: FFmpeg is a versatile multimedia tool used for audio and video processing, including conversion, compression, and streaming. It supports a wide range of formats.
