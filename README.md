@@ -104,7 +104,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **Imagemagick**: A versatile image processing tool that supports numerous formats, capable of resizing, converting, and manipulating images.
 - **Jpegoptim**: A utility to optimize and compress JPEG files without losing quality.
 - **Jq**: A command-line tool for processing JSON data, allowing for filtering, transformation, and extraction of information.
-- **Lsd**: A modern replacement for ls; better suited for displaying all files and directories, hidden or otherwise.
+- **Lsd**: A modern replacement for `ls`; better suited for displaying all files and directories, hidden or otherwise.
 - **Optipng**: A PNG optimizer that recompresses image files to a smaller size without losing any information.
 - **Pandoc**: A universal document converter.
 - **Ranger**: A console file manager with VI key bindings, offering a minimalistic and powerful visual interface.
