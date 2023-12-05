@@ -96,6 +96,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **Diff-so-fancy**: Improves the display of `diff` outputs.
 - **Duf**: A better alternative for checking disk usage.
 - **Exa**: A modern replacement for `ls` with color and Git integration.
+- **Eza**: A modern replacement for ls; better suited for listing only directories, or only files.
 - **Fd**: A simple, fast and user-friendly alternative to 'find'.
 - **Ffmpeg**: FFmpeg is a versatile multimedia tool used for audio and video processing, including conversion, compression, and streaming. It supports a wide range of formats.
 - **Fio**: A versatile I/O benchmarking tool, ideal for testing and analyzing the performance of various storage devices. It provides insights into latency, throughput, and IOPS.
@@ -105,6 +106,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 - **Jpegoptim**: A utility to optimize and compress JPEG files without losing quality.
 - **Jq**: A command-line tool for processing JSON data, allowing for filtering, transformation, and extraction of information.
 - **Optipng**: A PNG optimizer that recompresses image files to a smaller size without losing any information.
+- **Lsd**: A modern replacement for ls; better suited for displaying all files and directories, hidden or otherwise.
 - **Pandoc**: A universal document converter.
 - **Ranger**: A console file manager with VI key bindings, offering a minimalistic and powerful visual interface.
 - **Rar**: A command-line tool for creating and viewing RAR archives.
