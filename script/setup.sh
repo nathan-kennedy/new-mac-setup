@@ -180,6 +180,7 @@ done
 # **Colordiff**: A wrapper for 'diff' that produces the same output but with coloured syntax and vertical alignment.
 # **Diff-so-fancy**: A series of scripts to make Git's diff output look fancier and easier to understand.
 # **Duf**: Disk Usage/Free Utility with a best-in-slot visual presentation.
+# **Dust**: An enhanced 'du' written in rust for more intuitive and useful display of information.
 # **Eza**: A modern replacement for `ls`; better suited for displaying all directories, or all files.
 # **Fd**: A fast and user-friendly alternative to the classic 'find' command within the terminal.
 # **Ffmpeg**: FFmpeg is a versatile multimedia tool used for audio and video processing, including conversion, compression, and streaming. It supports a wide range of formats.
@@ -207,7 +208,7 @@ done
 # **Wifi-password**: A script to quickly find the password of the WiFi you're connected to.
 # **Z**: A command line tool that allows you to navigate your filesystem super fast using 'frecency' (combination of frequency and recency).
 # **Zip**: A command-line utility for packaging and compressing (archiving) files in a zip format, widely used for file distribution.
-brew install ansible asciinema bat btop colordiff diff-so-fancy duf exa fd ffmpeg fio fzf gifsicle git imagemagick jpegoptim jq neofetch neovim optipng pandoc ranger rar speedtest-cli starship tealdeer trash tree unar webp wifi-password z zip || failure_log+="Installation of one or more command-line tools failed\n"
+brew install ansible asciinema bat btop colordiff diff-so-fancy duf dust eza fd ffmpeg fio fzf gifsicle git imagemagick jpegoptim jq neofetch neovim optipng lsd pandoc ranger rar speedtest-cli starship tealdeer trash tree unar webp wifi-password z zip || failure_log+="Installation of one or more command-line tools failed\n"
 
 # *Install Node and Python via Homebrew:*
 
@@ -267,4 +268,3 @@ fi
 # Feel free to remove or add packages and software to suit your needs. Keep in mind the top-to-bottom order of commands. If you want a cask package, Homebrew needs to be installed first. Also anything being installed from the App store needs to execute after 'mas' installation on line 44.
 
 # Make sure you've logged into the App Store before running this script since 'mas' requires you to be logged in. If you're adding software to the script from the App store be sure to use the appropriate id number (App names do not work with mas).
-
