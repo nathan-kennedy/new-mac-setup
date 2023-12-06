@@ -174,6 +174,7 @@ done
 # *Install command-line tools and applications via Homebrew:*
 
 # **Ansible**: An open-source automation platform that enables infrastructure as code, task automation, application deployment, and encryption.
+# **Aria2**: A simple torrenting tool for the command line.
 # **Asciinema**: An open-source solution for recording terminal sessions and sharing them.
 # **Bat**: Adds syntax highlighting for a large number of languages, git integration, etc to 'cat' command.
 # **Btop**: An interactive system monitor designed as an alternative to the Unix program 'top' (btop is way better than htop).
@@ -208,7 +209,7 @@ done
 # **Wifi-password**: A script to quickly find the password of the WiFi you're connected to.
 # **Z**: A command line tool that allows you to navigate your filesystem super fast using 'frecency' (combination of frequency and recency).
 # **Zip**: A command-line utility for packaging and compressing (archiving) files in a zip format, widely used for file distribution.
-brew install ansible asciinema bat btop colordiff diff-so-fancy duf dust eza fd ffmpeg fio fzf gifsicle git imagemagick jpegoptim jq neofetch neovim optipng lsd pandoc ranger rar speedtest-cli starship tealdeer trash tree unar webp wifi-password z zip || failure_log+="Installation of one or more command-line tools failed\n"
+brew install ansible aria2 asciinema bat btop colordiff diff-so-fancy duf dust eza fd ffmpeg fio fzf gifsicle git imagemagick jpegoptim jq neofetch neovim optipng lsd pandoc ranger rar speedtest-cli starship tealdeer trash tree unar webp wifi-password z zip || failure_log+="Installation of one or more command-line tools failed\n"
 
 # *Install Node and Python via Homebrew:*
 

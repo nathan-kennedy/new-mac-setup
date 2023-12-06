@@ -88,7 +88,7 @@ For any questions or feedback, please feel free to reach out to Nathan Kennedy a
 
 ## Command-Line Utilities
 
-- **Archey4**: A system information tool designed for macOS.
+- **Aria2**: Torrenting tool for the command line.
 - **Asciinema**: Terminal session recorder that lets you record and share your command-line workflows.
 - **Bat**: A clone of `cat` with syntax highlighting and Git integration.
 - **Btop**: An interactive system monitor designed as an alternative to the Unix program 'top' (btop is way better than htop).
